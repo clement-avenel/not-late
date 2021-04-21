@@ -1,0 +1,51 @@
+{
+  "name": "not-late-api",
+  "version": "0.0.1",
+  "author": "clement-avenel",
+  "license": "MIT",
+  "description": "A simple API to quickly find apology for being late ",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/clement-avenel/not-late.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "cross-env NODE_ENV=test jest --coverage --detectOpenHandles --verbose --testTimeout=10000"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov"
+    ],
+    "coverageDirectory": "./coverage",
+    "reporters": [
+      "default"
+    ],
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.7",
+    "mongoose-unique-validator": "^2.0.3"
+  },
+  "engines": {
+    "node": "v13.x"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^7.0.3",
+    "jest": "^26.6.3",
+    "superagent": "^6.1.0",
+    "supertest": "^6.1.3"
+  }
+}
