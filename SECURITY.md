@@ -8,4 +8,4 @@
 
 ## Reporting a Vulnerability
 
-To report a vulnerability, please add a repository issue
+To report a vulnerability, please send an email to contact@clement-avenel.com
