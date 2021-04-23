@@ -20,7 +20,7 @@ describe('📄 Testing an unknown route', () => {
       .get('/sincerity')
       .then((response) => {
         expect(response.statusCode).toBe(404);
-        expect(response.type).toBe('application/json');
+        expect(response.type).toBe('text/html');
         done();
       }).catch((err) => {
         console.log(err)
