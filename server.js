@@ -31,11 +31,7 @@ app.use(cors(corsOptions))
 app.use(helmet());
 // Use Api routes in the App
 app.use('/', apiRoutes);
-// The "catchall" handler: for any request that doesn't
-// match one above, send back React's index.html file.
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname+'/client/build/index.html'));
-});
+// The "catchall" handler: for any request that doesn't match above
 app.use('*', (req, res, next) => {
   const error = new Error("Not found");
   error.status = 404;
