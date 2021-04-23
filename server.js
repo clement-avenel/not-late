@@ -1,5 +1,7 @@
 // Import express
 let express = require('express');
+
+const path = require('path');
 // Import Body parser
 let bodyParser = require('body-parser');
 // Import CORS
@@ -25,24 +27,19 @@ var corsOptions = {
 app.use(cors(corsOptions))
 //Use helmet
 app.use(helmet());
-
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'client/build')));
 // Use Api routes in the App
 app.use('/', apiRoutes);
-
+// The "catchall" handler: for any request that doesn't
+// match one above, send back React's index.html file.
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname+'/client/build/index.html'));
+});
 app.use((req, res, next) => {
   const error = new Error("Not found");
   error.status = 404;
   next(error);
-});
-
-// error handler middleware
-app.use((error, req, res, next) => {
-  res.status(error.status || 500).send({
-    error: {
-      status: error.status || 500,
-      message: error.message || 'Internal Server Error',
-    },
-  });
 });
 
 module.exports = app
