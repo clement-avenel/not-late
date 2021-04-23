@@ -1,6 +1,6 @@
 {
   "name": "not-late-api",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "clement-avenel",
   "license": "MIT",
   "description": "A simple API to quickly find apology for being late ",
