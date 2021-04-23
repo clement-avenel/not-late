@@ -4,7 +4,7 @@ const app = require('../server')
 describe('📄 Testing GET route', () => {
   test('🙏 Get a random apology', async (done) => {
     return request(app)
-      .get('/')
+      .get('/api')
       .then((response) => {
         expect(response.statusCode).toBe(200);
         expect(response.type).toBe('application/json');

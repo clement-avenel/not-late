@@ -7,7 +7,6 @@ npm install
 ```
 
 ## Usage
-
 To run the API on localhost, simply execute :
 ```node
 nodemon index
@@ -19,11 +18,9 @@ npm run test
 ```
 
 ## Contributing
-
-Hey guys, you're invited to contribute ! Just fork this repository, change the ```apology.json``` with funny things and do a Pull Request !
+Hey guys, you're invited to contribute ! Just fork this repository, change the ```apologies.json``` with funny things and do a Pull Request !
 
 ## License
-
 MIT License
 
 Copyright (c) 2021 Clément Avenel

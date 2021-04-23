@@ -1,6 +1,6 @@
 # dependencies
 /node_modules
+/client/node_modules
 # code coverage report
 /coverage
-# Database configuration
-db.config.js
+/client/.eslintcache

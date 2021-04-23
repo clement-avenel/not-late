@@ -4,6 +4,6 @@ let router = require('express').Router();
 // Import controllers
 var apologyController = require('./controllers/apologyController');
 // Apology routes
-router.get('/', apologyController.index);
+router.get('/api', apologyController.index);
 // Export API routes
 module.exports = router;

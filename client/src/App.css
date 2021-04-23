@@ -1,0 +1,69 @@
+.App {
+  display:flex;
+  height:100vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.Apology {
+ text-align:center;
+}
+.Message {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ width:100vw;
+}
+.Author {
+ display:flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ width:100vw;
+}
+h1 {
+  font-family: Impact;
+  color: white;
+  text-shadow: 0 0 20px rgb(0 0 0 / 25%), 0 2px 2px rgb(0 0 0 / 50%);
+  font-size: 80px;
+  text-transform: uppercase;
+  padding-right:10vw;
+  padding-left:10vw;
+}
+a {
+ color: white;
+ text-decoration:none;
+ text-shadow: 0 0 20px rgb(0 0 0 / 25%), 0 2px 2px rgb(0 0 0 / 50%);
+ font-size: 20px;
+}
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.github-corner:hover
+.octo-arm{
+ animation:octocat-wave 560ms ease-in-out
+}
+@keyframes octocat-wave{
+ 0%,100%{transform:rotate(0)}
+ 20%,60%{transform:rotate(-25deg)}
+ 40%,80%{transform:rotate(10deg)}
+}
+@media (max-width:500px){
+ .github-corner:hover
+ .octo-arm{
+  animation:none
+ }
+ .github-corner
+ .octo-arm{
+  animation:octocat-wave 560ms ease-in-out
+  }
+}
