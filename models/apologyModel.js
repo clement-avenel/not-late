@@ -1,12 +1,8 @@
-var mongoose = require('mongoose');
-
-var apologySchema = mongoose.Schema({
-  vip: { type: Boolean, required: true },
-  delay: { type: Number, required: true },
-  message: { type: String, required: true },
-  create_date: {type: Date, default: Date.now },
-  update_date: { type: Date }
-});
-
-// Export Apology model
-var Apology = module.exports = mongoose.model('apology', apologySchema)
+var apologySchema = {
+  type: 'object',
+  properties: {
+    message: { type: 'string', required: true },
+    author: { type: 'string', required: true }
+  }
+}
+module.exports = apologySchema;
