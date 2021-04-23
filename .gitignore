@@ -4,3 +4,4 @@
 # code coverage report
 /coverage
 /client/.eslintcache
+/client/build

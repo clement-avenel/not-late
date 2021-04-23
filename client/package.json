@@ -13,7 +13,10 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:8080/",
+  "engines": {
+    "node": "v14.x"
+  },
+  "proxy": "http://localhost:8080",
   "browserslist": [
     ">0.2%",
     "not dead",
