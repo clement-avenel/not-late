@@ -12,6 +12,13 @@ var helmet = require('helmet');
 let app = express();
 // Import routes
 let apiRoutes = require("./api-routes");
+// Rate limiter to prevent denial-of-service attacks
+var RateLimit = require('express-rate-limit');
+var limiter = new RateLimit({
+  windowMs: 1*60*1000, // 1 minute
+  max: 5
+});
+app.use(limiter);
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
 // Configure bodyparser to handle post requests
