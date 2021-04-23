@@ -16,7 +16,7 @@ let apiRoutes = require("./api-routes");
 var RateLimit = require('express-rate-limit');
 var limiter = new RateLimit({
   windowMs: 1*60*1000, // 1 minute
-  max: 5
+  max: 60
 });
 app.use(limiter);
 // Serve static files from the React app
