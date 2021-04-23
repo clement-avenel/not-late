@@ -12,6 +12,8 @@ var helmet = require('helmet');
 let app = express();
 // Import routes
 let apiRoutes = require("./api-routes");
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'client/build')));
 // Configure bodyparser to handle post requests
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
@@ -27,8 +29,6 @@ var corsOptions = {
 app.use(cors(corsOptions))
 //Use helmet
 app.use(helmet());
-// Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'client/build')));
 // Use Api routes in the App
 app.use('/', apiRoutes);
 // The "catchall" handler: for any request that doesn't

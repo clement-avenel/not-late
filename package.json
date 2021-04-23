@@ -15,7 +15,7 @@
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
     "dev:server": "cd client && yarn build && cd .. && yarn start",
     "test": "cross-env NODE_ENV=test jest --coverage --detectOpenHandles --verbose --testTimeout=10000",
-    "start": "node index.js",
+    "start": "nodemon index.js",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "jest": {
