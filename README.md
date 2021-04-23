@@ -1,6 +1,9 @@
-# not-late API
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fclement-avenel%2Fnot-late.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fclement-avenel%2Fnot-late?ref=badge_shield)
-
+[![GitHub watchers](https://img.shields.io/github/watchers/clement-avenel/not-late.svg?style=social&label=Watch&maxAge=2592000)](https://github.com/clement-avenel/not-late/watchers/)
+[![GitHub stars](https://img.shields.io/github/stars/clement-avenel/not-late.svg?style=social&label=Star&maxAge=2592000)](https://github.com/clement-avenel/not-late/stargazers/)
+[![GitHub forks](https://img.shields.io/github/forks/clement-avenel/not-late.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/clement-avenel/not-late/network/)
+# not-late API
 A simple API to get funny bad faith latecomers apologies !
 
 ## Installation
@@ -44,6 +47,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fclement-avenel%2Fnot-late.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fclement-avenel%2Fnot-late?ref=badge_large)
